@@ -10,10 +10,11 @@ const { works } = config;
 const Card = ({ work }) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
+      <figure className="w-90 p-1 mx-auto ">
         <img
           src={getImageUrl(work.banner)}
           alt={`${work.banner} doesn't exist`}
+          className="rounded-3xl"
         />
       </figure>
       <div className="card-body">
