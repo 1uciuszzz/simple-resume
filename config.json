@@ -1,0 +1,179 @@
+{
+  "header": {
+    "brandText": {
+      "label": "1uciuszzz"
+    },
+    "navbar": [
+      {
+        "id": 0,
+        "label": "Home",
+        "anchor": "profile"
+      },
+      {
+        "id": 1,
+        "label": "About Me",
+        "anchor": "about"
+      },
+      {
+        "id": 2,
+        "label": "My Works",
+        "anchor": "works"
+      },
+      {
+        "id": 3,
+        "label": "Contact",
+        "anchor": "contact"
+      }
+    ]
+  },
+  "profile": {
+    "greetingText": "Hello 👋, I'm",
+    "firstName": "Lucius",
+    "lastName": "Zhao",
+    "simplyIntroduction": "I am a web developer specializing in JavaScript frameworks like VueJS, ReactJS and ExpressJS. Currently I am doing ... work.",
+    "startBtnText": "More 👇",
+    "banner": "web-development.svg"
+  },
+  "about": {
+    "title": "About Me",
+    "photo": "photo.jpg",
+    "paragraph": [
+      {
+        "id": 0,
+        "content": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi."
+      },
+      {
+        "id": 1,
+        "content": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi."
+      }
+    ]
+  },
+  "skills": {
+    "list": [
+      {
+        "id": 0,
+        "name": "javascript",
+        "imgName": "javascript.svg"
+      },
+      {
+        "id": 1,
+        "name": "vue",
+        "imgName": "vue-js.svg"
+      },
+      {
+        "id": 2,
+        "name": "react",
+        "imgName": "react.svg"
+      },
+      {
+        "id": 3,
+        "name": "nodejs",
+        "imgName": "node-js.svg"
+      },
+      {
+        "id": 4,
+        "name": "python",
+        "imgName": "python.svg"
+      },
+      {
+        "id": 5,
+        "name": "mongodb",
+        "imgName": "mongodb.svg"
+      },
+      {
+        "id": 6,
+        "name": "material-ui",
+        "imgName": "material-ui.svg"
+      },
+      {
+        "id": 7,
+        "name": "tailwindcss",
+        "imgName": "tailwindcss.svg"
+      },
+      {
+        "id": 8,
+        "name": "sass",
+        "imgName": "sass.svg"
+      }
+    ]
+  },
+  "works": {
+    "list": [
+      {
+        "id": 1,
+        "title": "Marka",
+        "introduction": "使用React、FastAPI和PostgreSQL构建的书签管理系统，用于收集和分享网络书签。",
+        "banner": "marka.png",
+        "url": "https://github.com/1uciuszzz/mark-library",
+        "btnLabel": "Github💨"
+      },
+      {
+        "id": 2,
+        "title": "Vocabulary",
+        "introduction": "使用React、FastAPI和PostgreSQL构建的单词应用，核心功能为添加单词，左侧按首字母分类渲染列表，将单词标记为已掌握等等。",
+        "banner": "vocabulary-app.png",
+        "url": "https://github.com/1uciuszzz/vocabulary-card",
+        "btnLabel": "Github💨"
+      },
+      {
+        "id": 3,
+        "title": "Bugfix",
+        "introduction": "使用Vue3、Express和MongoDB构建的项目开发中的Bug工作流管理系统，以单个开发组为例，项目经理能够派发功能开发和功能测试给到对应的开发人员和测试人员；开发人员和测试人员可以访问派发给自己的任务。",
+        "banner": "bugfix.png",
+        "url": "https://github.com/1uciuszzz/bugfix-module",
+        "btnLabel": "Github💨"
+      },
+      {
+        "id": 4,
+        "title": "Spotify Clone",
+        "introduction": "使用React对Spotify iOS端应用的模拟。",
+        "banner": "spotify-clone.png",
+        "url": "",
+        "btnLabel": ""
+      },
+      {
+        "id": 5,
+        "title": "Live Demo",
+        "introduction": "使用Vue3和DPlayer构建的简单的直播案例，ws实现的双端通信，支持多用户弹幕互动。",
+        "banner": "live.png",
+        "url": "",
+        "btnLabel": ""
+      }
+    ]
+  },
+  "findMe": {
+    "title": "Find Me!",
+    "description": "Find me on social networks with @1uciuszzz",
+    "socialMedia": [
+      {
+        "id": 0,
+        "platform": "github",
+        "url": "https://github.com/1uciuszzz"
+      },
+      {
+        "id": 1,
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/in/zhaolixing/"
+      }
+    ]
+  },
+  "contact": {
+    "list": [
+      {
+        "id": 0,
+        "type": "email",
+        "content": "nick_zzhao@outlook.com",
+        "description": "send email"
+      },
+      {
+        "id": 1,
+        "type": "phone",
+        "content": "+86 18171299340",
+        "description": "call me"
+      }
+    ]
+  },
+  "footer": {
+    "author": "Lucius"
+  }
+}
