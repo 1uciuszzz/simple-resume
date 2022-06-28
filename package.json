@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tailwindcss": "npx tailwindcss -i ./src/tailwind.css -o ./src/App.css --watch"
   },
   "dependencies": {
     "daisyui": "^2.17.0",
