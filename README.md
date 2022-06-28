@@ -31,8 +31,8 @@ heroku open
 
 ## wiki for config.json
 
-> all of the images should put in `assets`
-> in config.json, you should fill the image name only.
+> all of the images should put in `assets`  
+> in config.json, you should fill the image name only.  
 > example config👇
 
 ```json
