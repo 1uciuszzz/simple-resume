@@ -8,12 +8,15 @@ const { footer } = config;
 
 const Footer = () => {
   return (
-    <div className="bg-[#FEA287] h-32">
-      <div className="flex justify-center items-center h-full">
-        <FaCopyright size={16} className="mr-1" />
-        <Typography
-          content={`Copyright 2022 ${footer.author} - All Rights Reserved`}
-        />
+    <div className={`bg-[${footer.bgColor}] h-16`}>
+      <div className="grid place-content-center h-full md:flex md:items-center md:gap-1">
+        <div className="flex justify-center items-center gap-1">
+          <FaCopyright size={16} />
+          <Typography content={`Copyright 2022 ${footer.author}`} />
+        </div>
+        <div className="flex justify-center">
+          <Typography content={`All Rights Reserved`} />
+        </div>
       </div>
     </div>
   );

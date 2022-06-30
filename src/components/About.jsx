@@ -8,11 +8,14 @@ const { about } = config;
 
 const About = () => {
   return (
-    <div id="about" className="h-screen bg-[#574C8F]">
-      <div className="hero h-full text-primary-content">
-        <div className="hero-content flex-col lg:flex-row">
-          <img src={getImageUrl(about.photo)} className="rounded-lg w-6/12" />
-          <div className="w-6/12 flex flex-col gap-4">
+    <div id="about" className={`bg-[${about.bgColor}]`}>
+      <div className="hero text-primary-content">
+        <div className="hero-content flex-col md:py-16">
+          <img
+            src={getImageUrl(about.photo)}
+            className="rounded-lg shadow-lg md:w-10/12"
+          />
+          <div className="flex flex-col gap-4 md:w-10/12">
             <Typography
               content={about.title}
               variant="h3"
@@ -27,6 +30,15 @@ const About = () => {
                 />
               );
             })}
+            <div className="flex flex-wrap gap-1">
+              {about.skillList.map((skill, index) => {
+                return (
+                  <span className="badge font-mono" key={index}>
+                    {skill}
+                  </span>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

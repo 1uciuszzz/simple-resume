@@ -18,12 +18,12 @@ const Icon = ({ type }) => {
 
 const Card = ({ item }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl rounded-lg">
       <div className="card-body items-center">
         <Icon type={item.type} />
         <Typography variant="h2" content={item.type} className="card-title" />
-        <Typography content={item.content} />
-        <div className="card-actions justify-end">
+        <Typography variant="h6" content={item.content} />
+        <div className="card-actions">
           <LinkButton
             href={
               item.type === "email" ? `mailto://${item.content}` : undefined
@@ -39,8 +39,8 @@ const Card = ({ item }) => {
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-[#574C8F] h-96">
-      <div className="flex h-full py-16 justify-evenly">
+    <div id="contact" className={`bg-[${contact.bgColor}]`}>
+      <div className="flex flex-col gap-4 md:gap-16 p-4 md:p-16 md:grid md:grid-cols-2">
         {contact.list.map((item) => {
           return <Card item={item} key={item.id} />;
         })}

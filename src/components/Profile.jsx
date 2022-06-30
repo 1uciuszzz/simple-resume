@@ -9,34 +9,22 @@ const { profile } = config;
 
 const Profile = () => {
   return (
-    <div id="profile" className="h-[calc(100vh-64px)] bg-[#76B5A2]">
-      <div className="hero h-full">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src={getImageUrl(profile.banner)}
-            className="w-6/12 rounded-lg "
-          />
-          <div className="flex flex-col gap-4 w-6/12">
-            <Typography
-              content={profile.greetingText}
-              variant="h4"
-              className="text-5xl font-bold"
-            />
-            <Typography
-              content={profile.firstName}
-              variant="h1"
-              className="py-6"
-            />
-            <Typography
-              content={profile.lastName}
-              variant="h1"
-              className="py-6"
-            />
-            <Typography content={profile.simplyIntroduction} className="py-6" />
+    <div
+      id="profile"
+      className={`bg-[${profile.bgColor}] h-[calc(100vh-3rem)]`}
+    >
+      <div className="hero">
+        <div className="hero-content flex-col">
+          <img src={getImageUrl(profile.banner)} className="w-8/12" />
+          <div className="flex flex-col gap-4 w-10/12">
+            <Typography content={profile.greetingText} variant="h4" />
+            <Typography content={profile.firstName} variant="h2" />
+            <Typography content={profile.lastName} variant="h2" />
+            <Typography content={profile.simplyIntroduction} />
             <OutlineLink
               href={"#about"}
               label={profile.startBtnText}
-              className="btn btn-primary py-6"
+              className="btn btn-primary"
             />
           </div>
         </div>

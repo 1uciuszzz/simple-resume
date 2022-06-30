@@ -6,8 +6,8 @@ const { skills } = config;
 
 const Skills = () => {
   return (
-    <div className="bg-[#FEA287] h-[calc((100vh-64px)/2)]">
-      <div className="flex flex-wrap content-center justify-center h-full gap-4">
+    <div className={`bg-[${skills.bgColor}]`}>
+      <div className="grid grid-cols-3 md:grid-cols-5 auto-rows-auto p-4 place-items-center">
         {skills.list.map((item) => {
           return (
             <img
@@ -16,6 +16,7 @@ const Skills = () => {
               key={item.id}
               height="120"
               width="120"
+              className="p-4"
             />
           );
         })}

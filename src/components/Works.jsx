@@ -9,7 +9,9 @@ const { works } = config;
 
 const Card = ({ work }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div
+      className={`card w-[calc(100vw-4rem)] md:w-[calc(100vw-16rem)] rounded-lg bg-base-100 shadow-lg`}
+    >
       <figure>
         <img
           src={getImageUrl(work.banner)}
@@ -29,7 +31,7 @@ const Card = ({ work }) => {
 
 const Carousel = ({ works }) => {
   return (
-    <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
+    <div className="carousel carousel-center p-4 gap-4 bg-secondary-content rounded-lg">
       {works.map((work) => {
         return (
           <div className="carousel-item" key={work.id}>
@@ -43,9 +45,11 @@ const Carousel = ({ works }) => {
 
 const Works = () => {
   return (
-    <div id="works" className="bg-[#FFE0CC] h-screen">
-      <div className="flex flex-col justify-evenly h-full px-8">
-        <Typography content={"My Works"} variant="h4" />
+    <div id="works" className={`bg-[${works.bgColor}]`}>
+      <div
+        className={`h-[calc(100vh-3rem)] md:h-full p-4 md:px-0 md:py-16 flex flex-col gap-4 md:w-10/12 md:mx-auto`}
+      >
+        <Typography content={works.title} variant="h4" />
         <Carousel works={works.list} />
       </div>
     </div>

@@ -1,5 +1,6 @@
 {
   "header": {
+    "bgColor": "#D3DBAF",
     "brandText": {
       "label": "1uciuszzz"
     },
@@ -27,28 +28,53 @@
     ]
   },
   "profile": {
-    "greetingText": "Hello 👋, I'm",
+    "bgColor": "#76B5A2",
+    "greetingText": "嗨 👋, 是我",
     "firstName": "Lucius",
     "lastName": "Zhao",
-    "simplyIntroduction": "I am a web developer specializing in JavaScript frameworks like VueJS, ReactJS and ExpressJS. Currently I am doing ... work.",
-    "startBtnText": "More 👇",
+    "simplyIntroduction": "我是一个Web前端开发者，主要技术栈为Javascript，ReactJS，VueJS和ExpressJS；有一年以上的开发经验。",
+    "startBtnText": "更多 👇",
     "banner": "web-development.svg"
   },
   "about": {
-    "title": "About Me",
+    "bgColor": "#574C8F",
+    "title": "关于我",
     "photo": "photo.jpg",
     "paragraph": [
       {
         "id": 0,
-        "content": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi."
+        "content": "嗨，我是Lucius Zhao，我是一个Web前端开发者。本科专业为软件工程，我从学习Java Web的时候接触到了Web开发，发现了我对它的热爱，并在此方向进行了更深入的学习。"
       },
       {
         "id": 1,
-        "content": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi."
+        "content": "我尝试过许多的Web技术，比如Java的Tomcat，Servlet和JSP；Python的Flask，Django和FastAPI；最终扎根于NodeJS的ExpressJS上面。"
+      },
+      {
+        "id": 2,
+        "content": "下面是我目前使用的技术栈："
       }
+    ],
+    "skillList": [
+      "Javascript",
+      "VueJS",
+      "ReactJS",
+      "NextJS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Sass",
+      "Webpack",
+      "Python",
+      "FastAPI",
+      "Typescript",
+      "React Native",
+      "Material UI"
     ]
   },
   "skills": {
+    "bgColor": "#FEA287",
     "list": [
       {
         "id": 0,
@@ -98,6 +124,8 @@
     ]
   },
   "works": {
+    "title": "My Works",
+    "bgColor": "#FFE0CC",
     "list": [
       {
         "id": 1,
@@ -142,6 +170,7 @@
     ]
   },
   "findMe": {
+    "bgColor": "#76B5A2",
     "title": "Find Me!",
     "description": "Find me on social networks with @1uciuszzz",
     "socialMedia": [
@@ -158,6 +187,7 @@
     ]
   },
   "contact": {
+    "bgColor": "#574C8F",
     "list": [
       {
         "id": 0,
@@ -174,6 +204,7 @@
     ]
   },
   "footer": {
+    "bgColor": "#FEA287",
     "author": "Lucius"
   }
 }

@@ -9,13 +9,13 @@ const { findMe } = config;
 
 const FindMe = () => {
   return (
-    <div className="bg-[#76B5A2] h-72">
-      <div className="flex items-center h-full">
-        <div className="w-6/12 pl-16">
-          <Typography content={findMe.title} variant="h1" />
-          <Typography content={findMe.description} />
+    <div className={`bg-[${findMe.bgColor}]`}>
+      <div className="flex flex-col p-4 gap-4 md:gap-0 md:grid md:grid-cols-2 md:place-items-center md:p-16">
+        <div className="">
+          <Typography content={findMe.title} variant="h2" />
+          <Typography content={findMe.description} variant="h6" />
         </div>
-        <div className="flex w-6/12 justify-end pr-16">
+        <div className="grid grid-cols-3">
           {findMe.socialMedia.map((item) => {
             switch (item.platform) {
               case "github":
